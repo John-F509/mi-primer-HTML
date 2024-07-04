@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png"> <!--1. favicon-->
+</head>
+
+<body>
+    <!-- Cambiar color de fondo 
+    <body style = "background-color: blanchedalmond;">
+    -->
+    <nav>
+        <a href="contacto.html">Contacto</a>
+        <a href="#Enlaces">Enlaces</a>
+    </nav>
+
+
+    <main>
+        <section id="Bio">
+
+            <h1> Internet de las cosas </h1>
+            <!-- <h2> Imágenes </h2> -->
+            <h2 class="highlight">Imágenes</h2>
+
+            <p>
+                El internet de las Cosas (IoT) se define como red de dispositivos físicos
+                interconectados que pueden recopilar y compartir datos a través de
+                internet, permitiendo la automatización y el control remoto en diversos entornos.
+            </p>
+
+            <h3> Gestión de imágenes</h3>
+            <img src="imagen_1.jpg" alt="paisaje" height="500" width="300">
+            <p> Elaborar un plan detallado que
+                describa la arquitectura del sistema, la interacción entre
+                los elementos y el protocolo de comunicación Bluetooth a
+                utilizar.</p>
+            <h4> Datos en Nube </h4>
+            <img src="Imagen_2.jpg" width="700" height="500" alt="paisaje">
+
+            <h2>imagen tomadas desde la web</h2>
+            <img src="https://th.bing.com/th/id/R.587b68985e5da9e61c1c49e3690195d0?rik=Czc1Fsy%2fkQ0Y8g&riu=http%3a%2f%2finsourcedmt.com%2fwp-content%2fuploads%2fAdobeStock_84744226-1024x698.jpeg&ehk=xjeEoj%2bCjJ5IoPFhYlBewseSbxPNHCCpBnUt6wLhHls%3d&risl=&pid=ImgRaw&r=0"
+                alt="Tecnologia" height="300" width="400">
+
+            <h2>Video tomado desde la web</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7Me6AS5rsAM?si=1BaS3p4w9GLSKsAN"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </section>
+
+        <!-- enlaces -->
+        <section id="Enlaces">
+            <h2> Enlaces </h2>
+            <a href="https://stem.ubidots.com/app/dashboards/667f5a185fd853000e8fcb49">URL conexion con nube</a>
+
+            <h1> MATERIALES </h1>
+            <p> Lista <strong> "no ordenada" </strong> </p>
+            <ul>
+                <li> Protoboard </li>
+                <li> PIC 18F452 </li>
+                <li> Jumper </li>
+                <li> Motores </li>
+                <li> Elices </li>
+                <li> Resistencias </li>
+                <li> Condensadores </li>
+                <li> Cristal </li>
+                <li> LM2596 </li>
+                <li> HC06 (Bluetooth) </li>
+            </ul>
+
+            <h1> PROCEDIMIENTO </h1>
+            <p> Lista <strong> "ordenada" </strong> </p>
+            <ol>
+                <li> Alistar el material </li>
+                <li> Realizar Montaje </li>
+                <li> realizar programacion en MPLAB </li>
+                <li> Realizar programacion python </li>
+                <li> Crear Token en NUBE (Ubidots) </li>
+                <li> Conectar Bluetooth del hardware al PC </li>
+                <li> Compilar programa en Python </li>
+                <li> Validar datos en nube (Ubidots) </li>
+            </ol>
+
+            <h1>Formulario de Contacto</h1>
+
+            <form action="#" method="post">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="motivo">Motivo de contacto:</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="">Selecciona un motivo</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="soporte">Soporte técnico</option>
+                    <option value="reclamo">Reclamo</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <label for="intereses">Intereses:</label>
+                <select id="intereses" name="intereses[]" multiple required>
+                    <option value="noticias">Noticias</option>
+                    <option value="promociones">Promociones</option>
+                    <option value="eventos">Eventos</option>
+                    <option value="otros">Otros</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar mensaje</button>
+                <button type="reset">Borrar contenido</button>
+            </form>
+
+
+    </main>
+    <!--     <footer> Todos los derechos reservados </footer> -->
+    <div id="footer">
+        Todos los derechos reservados pagina creada 04/07/2024
+    </div>
+
+</body>
+
+</html>
